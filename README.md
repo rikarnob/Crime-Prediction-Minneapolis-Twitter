@@ -6,6 +6,18 @@ Repository for all codes we used for the Fall Trends Marketplace Project. This r
 
 The repository also contains the PPT we used for the voicethread, the flyer we used for the Marketplace event and the dashboard that was on display.
 
+The idea of the project was to be able to predict crime using factors outside of previous incidents. The avenue we set out to explore was the predictive power of tweets from a region, weather information and demographic make-up of the same region, in predicting crime.
+
+Tweets, being textual in nature, have the potential of indicating the general sentiment prevailing in a region in addition to providing information about the latest goings-on. The idea behind incorporating each element was - 
+
+> Tweets - we gathered tweets from local news agencies to get a sense of the happenings; we considered a lagged value of the sentiment (e.g. for predicting crime on day T, we used tweets from day (T-1)) to predict crimes since sentiment of a day prior is more likely to have an impact on events of the following day
+
+> Weather - it is common knowledge that people tend to go out more when it's sunny outside. And crimes take place more when there are more people outside. But is that a blanket statement we can make? 
+
+(E.g. we found burglary/theft shoots up when there is more than 3-4 inches of snow!)
+
+> Demographic - indicator of how well-off a region within a city is which can be used as an excellent indicator for crime. Less well-off neighborhoods would tend to have a higher crime rate
+
 
 * 1. PreppingData.ipynb - Twitter API data and merging with crimes and weather data
 * 2. XGBoost.ipynb - Merging dataset from 1s output with topic distribution and poverty data
